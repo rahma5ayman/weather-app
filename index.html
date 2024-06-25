@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/main.css">
+
+  <script src="https://kit.fontawesome.com/8adc8a7dd7.js" crossorigin="anonymous"></script>
+
+  <title>weather</title>
+</head>
+<body >
+
+<nav class="navbar">
+    <div class="container">
+        <h1>
+            <i class="fa-solid fa-cloud"></i>
+            Weather Forecast</h1>
+        <ul class="nav-links">
+            <li><a href="#" onclick="getWeather()">Get Weather</a></li>
+        </ul>
+    </div>
+</nav>
+
+<div class="container my-4">
+    <div class="input-container">
+        <input type="text" id="cityInput" placeholder="Enter city name">
+        <button onclick="getWeather()">Find</button>
+    </div>
+    <div id="weatherCards" class="cards"></div>
+</div>
+
+<script src="js/index.js"></script>
+</body>
+</html>
+
